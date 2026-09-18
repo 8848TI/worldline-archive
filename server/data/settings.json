@@ -4,9 +4,9 @@
     "video": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
     "image": "",
     "images": [
-      "http://localhost:3000/uploads/mu6aodgope6rk2.png",
-      "http://localhost:3000/uploads/mu6aov44s4w1sl.png",
-      "http://localhost:3000/uploads/mu6aowokcrpce4.png"
+      "/uploads/mu6aodgope6rk2.webp",
+      "/uploads/mu6aov44s4w1sl.webp",
+      "/uploads/mu6aowokcrpce4.webp"
     ],
     "interval": 10
   }
