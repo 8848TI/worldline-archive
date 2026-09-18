@@ -41,13 +41,14 @@
         :style="{ aspectRatio: `${img.width || 800} / ${img.height || 1000}` }"
       >
         <el-image
-          :src="img.url"
+          :src="gridSrc(img)"
           lazy
           :preview-src-list="previewList"
           :initial-index="(page - 1) * pageSize + i"
           :preview-teleported="true"
           fit="cover"
           class="waterfall-img"
+          @error="onGridError(img)"
         >
           <template #error><div class="img-fallback">🖼️</div></template>
         </el-image>
@@ -75,6 +76,7 @@ import { computed, onMounted, ref } from 'vue'
 import { ZoomIn } from '@element-plus/icons-vue'
 import { fetchWallpapers } from '@/api/wallpaper'
 import { usePagination } from '@/composables/usePagination'
+import { thumbUrl } from '@/utils/imageUrl'
 import EmptyState from '@/components/common/EmptyState.vue'
 
 const list = ref([])
@@ -102,6 +104,16 @@ const filtered = computed(() => {
 const { page, pageSize, total, paged } = usePagination(filtered, 12)
 
 const previewList = computed(() => filtered.value.map((i) => i.url))
+
+// 瀑布流用缩略图（体积通常只有原图几十分之一），点开预览仍用原图；
+// 缩略图取不到时退回原图，避免历史文件没生成缩略图时显示不出来。
+const thumbFailed = ref(new Set())
+function gridSrc(img) {
+  return thumbFailed.value.has(img.id) ? img.url : thumbUrl(img.url)
+}
+function onGridError(img) {
+  if (!thumbFailed.value.has(img.id)) thumbFailed.value = new Set(thumbFailed.value).add(img.id)
+}
 
 onMounted(async () => {
   try {

@@ -17,16 +17,33 @@ function normalize(item) {
 }
 
 // 全局播放器状态：管理播放队列、当前曲目与播放控制。
+// 刷新页面后恢复上次的播放队列与进度：存 localStorage，恢复后处于暂停态
+// （浏览器本来也不允许无交互自动播放），用户点播放即可从原位置继续。
+export const PLAYER_SAVE_KEY = 'worldline-player'
+
+function loadSaved() {
+  try {
+    const s = JSON.parse(localStorage.getItem(PLAYER_SAVE_KEY) || 'null')
+    if (s && Array.isArray(s.queue) && s.queue.length && s.currentIndex >= 0 && s.currentIndex < s.queue.length) return s
+  } catch {
+    /* 数据坏了就当没有 */
+  }
+  return null
+}
+
 // 实际的 <audio> 由 utils/audio.js 提供单例，AudioEngine 组件负责把 store 状态同步到音频。
 export const usePlayerStore = defineStore('player', {
-  state: () => ({
-    queue: [], // 归一化后的播放队列
-    currentIndex: -1, // 当前曲目下标
-    playing: false,
-    currentTime: 0,
-    duration: 0,
-    volume: 0.8
-  }),
+  state: () => {
+    const saved = loadSaved()
+    return {
+      queue: saved?.queue || [], // 归一化后的播放队列
+      currentIndex: saved ? saved.currentIndex : -1, // 当前曲目下标
+      playing: false,
+      currentTime: saved?.currentTime || 0,
+      duration: 0,
+      volume: saved?.volume ?? 0.8
+    }
+  },
   getters: {
     current: (state) => state.queue[state.currentIndex] || null,
     hasTrack: (state) => state.currentIndex >= 0 && state.currentIndex < state.queue.length

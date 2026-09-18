@@ -55,7 +55,6 @@
     <router-link to="/music" class="music-more">打开音乐页 →</router-link>
 
     <!-- 播放列表抽屉 -->
-    <!-- 播放列表抽屉 -->
     <el-drawer
       v-model="playlistOpen"
       direction="rtl"

@@ -73,7 +73,9 @@ const articles = computed(() => {
   if (filter.tag) list = list.filter((i) => (i.tags || []).includes(filter.tag))
   if (filter.keyword) {
     const kw = filter.keyword.toLowerCase()
-    list = list.filter((i) => `${i.title}${i.summary}`.toLowerCase().includes(kw))
+    // 与后端 /api/content?keyword= 保持一致：正文也参与匹配
+    const textOf = (i) => `${i.title}${i.summary}${i.ext?.article?.content || ''}`
+    list = list.filter((i) => textOf(i).toLowerCase().includes(kw))
   }
   return [...list].sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
 })

@@ -7,12 +7,20 @@
     "dev": "node --watch-path=./app.js --watch-path=./routes --watch-path=./utils --watch-path=./middleware --watch-path=./db app.js",
     "start": "node app.js",
     "db:init": "node scripts/init-db.js",
-    "db:migrate": "node scripts/migrate-json-to-sqlite.js"
+    "db:migrate": "node scripts/migrate-json-to-sqlite.js",
+    "images:thumbs": "node scripts/generate-thumbs.js",
+    "db:backup": "node scripts/backup-db.js",
+    "images:optimize": "node scripts/optimize-images.js",
+    "smoke": "node scripts/smoke-test.js",
+    "db:export": "node scripts/export-db-to-json.js",
+    "archive": "node scripts/archive-content.js",
+    "sync:media": "node scripts/sync-media.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "multer": "^2.0.1",
-    "node-sqlite3-wasm": "^0.8.60"
+    "node-sqlite3-wasm": "^0.8.60",
+    "sharp": "^0.35.4"
   }
 }

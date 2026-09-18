@@ -1,5 +1,6 @@
 import { Router } from 'express'
 import { storage } from '../utils/storage.js'
+import { validateTagCategory } from '../utils/validate.js'
 import requireAuth from '../middleware/requireAuth.js'
 
 const router = Router()
@@ -13,6 +14,8 @@ router.get('/', (req, res) => {
 // body: { name: '新大类' }  或  { parent: '动漫', name: '新子类' }
 router.post('/', requireAuth, (req, res) => {
   const { parent = '', name } = req.body || {}
+  const invalid = validateTagCategory({ name })
+  if (invalid) return res.status(400).json({ message: invalid })
   const n = String(name || '').trim()
   if (!n) return res.status(400).json({ message: '名称不能为空' })
 

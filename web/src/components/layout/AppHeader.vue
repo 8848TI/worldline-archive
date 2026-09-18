@@ -103,7 +103,7 @@
 <script setup>
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { ElMessage } from 'element-plus'
+import { ElMessage } from 'element-plus/es/components/message/index'
 import {
   Search,
   Headset,

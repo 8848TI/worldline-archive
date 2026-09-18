@@ -34,7 +34,7 @@
 <script setup>
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { ElMessage } from 'element-plus'
+import { ElMessage } from 'element-plus/es/components/message/index'
 import { clearAuth, getUsername } from '@/utils/authToken'
 import ArticleAdmin from '@/components/admin/ArticleAdmin.vue'
 import TalkAdmin from '@/components/admin/TalkAdmin.vue'

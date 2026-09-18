@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { ElMessage } from 'element-plus'
+import { ElMessage } from 'element-plus/es/components/message/index'
 import { isLoggedIn } from '@/utils/authToken'
 
 // 路由表：所有页面都渲染在 App.vue 的三栏外壳中间列（左右侧栏常驻）。

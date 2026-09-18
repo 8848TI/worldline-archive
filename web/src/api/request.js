@@ -1,10 +1,12 @@
 import axios from 'axios'
-import { ElMessage } from 'element-plus'
-import { setupMock } from '@/mock'
+import { ElMessage } from 'element-plus/es/components/message/index'
 import { getToken, clearAuth } from '@/utils/authToken'
 
 // 是否启用 mock（默认开启，便于无后端预览；联调时把 .env 中 VITE_USE_MOCK 改为 false）
-const USE_MOCK = (import.meta.env.VITE_USE_MOCK ?? 'true') !== 'false'
+// 开关只在这里计算，真正的 mock 模块由 main.js 动态加载：
+// 关闭 mock 时那份约 38KB 的演示数据不会被打进入口 chunk（构建后可用 dist 体积复核）。
+const MOCK_FLAG = import.meta.env.VITE_USE_MOCK
+export const USE_MOCK = (MOCK_FLAG === undefined ? 'true' : MOCK_FLAG) !== 'false'
 
 // 统一的 axios 实例：所有接口请求都经由它发起，切真实后端时无需改动业务代码
 const request = axios.create({
@@ -40,9 +42,5 @@ request.interceptors.response.use(
   }
 )
 
-// 启用 mock：替换默认网络适配器，全部请求走本地 mock 数据
-if (USE_MOCK) {
-  setupMock(request)
-}
-
+// 说明：mock 的挂载在 main.js 里做（动态 import），这里不再静态引入 mock 模块
 export default request

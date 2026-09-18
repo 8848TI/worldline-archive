@@ -4,6 +4,7 @@ import path from 'node:path'
 import fs from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import requireAuth from '../middleware/requireAuth.js'
+import { processImage } from '../utils/imageProcess.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const UPLOAD_DIR = path.join(__dirname, '..', 'uploads')
@@ -65,9 +66,10 @@ const uploadAudio = multer({
 
 function respond(req, res, kind) {
   if (!req.file) return res.status(400).json({ message: '未接收到文件' })
-  const host = `${req.protocol}://${req.get('host')}`
+  // 返回相对地址而非 http://host/...：换域名、改端口、上 HTTPS 都不用改数据，
+  // 前端直接用它拼 src（开发态由 vite 代理 /uploads 到后端）。
   res.json({
-    url: `${host}/uploads/${req.file.filename}`,
+    url: `/uploads/${req.file.filename}`,
     filename: req.file.filename,
     size: req.file.size,
     mimetype: req.file.mimetype,
@@ -76,7 +78,26 @@ function respond(req, res, kind) {
 }
 
 // POST /api/upload —— 图片上传（需登录；multipart/form-data，字段名 file）
-router.post('/', requireAuth, uploadImage.single('file'), (req, res) => respond(req, res, 'image'))
+// 落盘后会压缩（超宽/超体积转 webp）并生成缩略图，返回 url 与 thumb 两个相对地址。
+router.post('/', requireAuth, uploadImage.single('file'), async (req, res, next) => {
+  if (!req.file) return res.status(400).json({ message: '未接收到文件' })
+  try {
+    const processed = await processImage(req.file)
+    const finalName = processed.url.split('/').pop()
+    const size = fs.existsSync(path.join(UPLOAD_DIR, finalName)) ? fs.statSync(path.join(UPLOAD_DIR, finalName)).size : req.file.size
+    if (processed.note) console.log('[upload]', req.file.filename, '→', processed.note)
+    res.json({
+      url: processed.url,
+      thumb: processed.thumb, // 列表/网格用；null 表示没有（svg/gif 或压缩失败）
+      filename: finalName,
+      size,
+      mimetype: processed.url.endsWith('.webp') ? 'image/webp' : req.file.mimetype,
+      kind: 'image'
+    })
+  } catch (err) {
+    next(err)
+  }
+})
 
 // POST /api/upload/video —— 视频上传（需登录；首页横幅等）
 router.post('/video', requireAuth, uploadVideo.single('file'), (req, res) => respond(req, res, 'video'))

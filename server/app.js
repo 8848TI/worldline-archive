@@ -16,6 +16,7 @@ import docsRouter from './routes/docs.js'
 import tagCategoryRouter from './routes/tagCategories.js'
 import settingsRouter from './routes/settings.js'
 import authRouter from './routes/auth.js'
+import seoRouter, { WEB_DIST } from './routes/seo.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
@@ -23,7 +24,18 @@ const app = express()
 const PORT = process.env.PORT || 3000
 
 // ── 中间件 ──
-app.use(cors()) // 跨域
+// 跨域：默认全开（本地开发方便）；配置 CORS_ORIGINS 后只放行列出的来源，
+// 例如 CORS_ORIGINS=https://blog.example.com,https://www.example.com
+const ALLOWED_ORIGINS = (process.env.CORS_ORIGINS || '')
+  .split(',')
+  .map((s) => s.trim())
+  .filter(Boolean)
+if (ALLOWED_ORIGINS.length) {
+  app.use(cors({ origin: ALLOWED_ORIGINS }))
+  console.log('[cors] 仅允许来源:', ALLOWED_ORIGINS.join(', '))
+} else {
+  app.use(cors())
+}
 app.use(express.json({ limit: '2mb' }))
 app.use(express.urlencoded({ extended: true }))
 
@@ -41,6 +53,12 @@ app.use('/api/docs', docsRouter)
 app.use('/api/tag-categories', tagCategoryRouter)
 app.use('/api/settings', settingsRouter)
 app.use('/api/auth', authRouter)
+
+// 前端构建产物（存在才生效）：index 关掉，避免盖掉下面的 JSON 首页
+app.use(express.static(WEB_DIST, { index: false }))
+
+// 站点地图 / RSS / 文章页 meta 注入（详见 routes/seo.js）
+app.use(seoRouter)
 
 // 根路径
 app.get('/', (req, res) => {

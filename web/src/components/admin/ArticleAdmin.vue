@@ -50,7 +50,8 @@
 
 <script setup>
 import { onMounted, reactive, ref } from 'vue'
-import { ElMessage, ElMessageBox } from 'element-plus'
+import { ElMessage } from 'element-plus/es/components/message/index'
+import { ElMessageBox } from 'element-plus/es/components/message-box/index'
 import { fetchContentList, createContent, updateContent, deleteContent } from '@/api/content'
 import { ARTICLE_TYPES, CATEGORIES, getCategory } from '@/constants/categories'
 import TagSelect from './TagSelect.vue'

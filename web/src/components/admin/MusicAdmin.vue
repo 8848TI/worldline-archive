@@ -64,11 +64,13 @@
 
 <script setup>
 import { onMounted, reactive, ref } from 'vue'
-import { ElMessage, ElMessageBox } from 'element-plus'
+import { ElMessage } from 'element-plus/es/components/message/index'
+import { ElMessageBox } from 'element-plus/es/components/message-box/index'
 import { fetchMusicList } from '@/api/music'
 import { createContent, updateContent, deleteContent } from '@/api/content'
 import { uploadAudio, uploadImage } from '@/api/upload'
 import { formatTime } from '@/utils/format'
+import { readDurationFromFile, readDurationFromUrl } from '@/utils/mediaMeta'
 import TagSelect from './TagSelect.vue'
 
 const list = ref([])
@@ -79,22 +81,6 @@ const percent = ref(0)
 const formVisible = ref(false)
 const formRef = ref(null)
 const form = reactive({ id: '', title: '', artist: '', audioUrl: '', album: '', cover: '', tags: [], duration: 0 })
-
-// 读取本地音频文件的时长（秒）：用 <audio> 解析元数据，无需上传后由服务端探测
-function readAudioDuration(file) {
-  return new Promise((resolve) => {
-    const url = URL.createObjectURL(file)
-    const el = new Audio()
-    el.preload = 'metadata'
-    const done = (v) => {
-      URL.revokeObjectURL(url)
-      resolve(v)
-    }
-    el.onloadedmetadata = () => done(Math.round(el.duration) || 0)
-    el.onerror = () => done(0)
-    el.src = url
-  })
-}
 
 const rules = {
   title: [{ required: true, message: '请输入标题', trigger: 'blur' }],
@@ -128,7 +114,7 @@ async function onUploadAudio({ file, onSuccess, onError }) {
     })
     form.audioUrl = data.url
     // 上传成功后解析并记录时长
-    const duration = await readAudioDuration(file)
+    const duration = await readDurationFromFile(file)
     if (duration) form.duration = duration
     percent.value = 100
     formRef.value?.validateField?.('audioUrl')
@@ -174,17 +160,6 @@ function openForm(item) {
 }
 
 // 从地址探测时长（用于直接填链接、或编辑历史数据补齐时长）
-function readDurationFromUrl(url) {
-  return new Promise((resolve) => {
-    if (!url) return resolve(0)
-    const el = new Audio()
-    el.preload = 'metadata'
-    el.onloadedmetadata = () => resolve(Math.round(el.duration) || 0)
-    el.onerror = () => resolve(0)
-    el.src = url
-  })
-}
-
 async function save() {
   await formRef.value.validate()
   saving.value = true

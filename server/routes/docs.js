@@ -8,7 +8,7 @@ const endpoints = [
   { method: 'GET', path: '/api/auth/check', desc: '校验 token 是否有效', auth: true },
   { method: 'GET', path: '/api/content', desc: '统一内容列表', query: 'type, tag, keyword, sort, page, pageSize' },
   { method: 'GET', path: '/api/content/:id', desc: '内容详情（含 markdown 正文）' },
-  { method: 'POST', path: '/api/content', desc: '新增内容（type=music 写入 music.json，其余写入 content.json）', auth: true },
+  { method: 'POST', path: '/api/content', desc: '新增内容（type=music 存入 musics 表，其余存入 contents 表）', auth: true },
   { method: 'PUT', path: '/api/content/:id', desc: '修改内容', auth: true },
   { method: 'DELETE', path: '/api/content/:id', desc: '删除内容', auth: true },
   { method: 'GET', path: '/api/music', desc: '音乐列表', query: 'keyword' },

@@ -40,7 +40,8 @@
 
 <script setup>
 import { computed, nextTick, ref } from 'vue'
-import { ElMessage, ElMessageBox } from 'element-plus'
+import { ElMessage } from 'element-plus/es/components/message/index'
+import { ElMessageBox } from 'element-plus/es/components/message-box/index'
 import { uploadImage } from '@/api/upload'
 import { renderMarkdown } from '@/utils/markdown'
 

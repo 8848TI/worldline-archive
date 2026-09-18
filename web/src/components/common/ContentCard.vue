@@ -2,7 +2,7 @@
   <!-- 海报式卡片（文娱集）：整图铺满 + 左上角状态 + 底部标题/标签 -->
   <article v-if="variant === 'poster'" class="content-card card-poster" @click="$emit('open', item)">
     <div class="poster-cover">
-      <img v-if="item.cover && !imgError" :src="item.cover" :alt="item.title" loading="lazy" @error="imgError = true" />
+      <img v-if="item.cover && !imgError" :src="imgSrc" :alt="item.title" loading="lazy" @error="onImgError" />
       <span v-else class="poster-emoji">{{ cat.emoji }}</span>
 
       <!-- 底部渐变遮罩 + 标题 + 标签 -->
@@ -18,7 +18,7 @@
   <!-- 默认卡片（封面 + 正文） -->
   <article v-else class="content-card" @click="$emit('open', item)">
     <div class="card-cover" :style="coverStyle">
-      <img v-if="item.cover && !imgError" :src="item.cover" :alt="item.title" loading="lazy" @error="imgError = true" />
+      <img v-if="item.cover && !imgError" :src="imgSrc" :alt="item.title" loading="lazy" @error="onImgError" />
       <span v-else class="cover-emoji">{{ cat.emoji }}</span>
       <span class="type-badge" :style="{ background: cat.color }">{{ cat.label }}</span>
       <span v-if="item.type === 'music'" class="play-hint">
@@ -47,6 +47,7 @@ import { computed, ref } from 'vue'
 import { VideoPlay } from '@element-plus/icons-vue'
 import { getCategory } from '@/constants/categories'
 import { formatDate } from '@/utils/format'
+import { thumbUrl } from '@/utils/imageUrl'
 
 const props = defineProps({
   item: { type: Object, required: true },
@@ -57,6 +58,14 @@ const props = defineProps({
 defineEmits(['open'])
 
 const imgError = ref(false)
+// 列表/网格用缩略图（后端在上传时生成，命名约定见 utils/imageUrl.js）；
+// 缩略图取不到退回原图，原图也失败才显示分类占位色。
+const thumbFailed = ref(false)
+const imgSrc = computed(() => (thumbFailed.value ? props.item.cover : thumbUrl(props.item.cover)))
+function onImgError() {
+  if (!thumbFailed.value) thumbFailed.value = true
+  else imgError.value = true
+}
 const cat = computed(() => getCategory(props.item.type))
 
 // 默认卡片无封面时，用分类识别色的低饱和渐变占位

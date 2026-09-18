@@ -78,7 +78,7 @@
 
 <script setup>
 import { onMounted, onUnmounted, reactive, ref, watch } from 'vue'
-import { ElMessage } from 'element-plus'
+import { ElMessage } from 'element-plus/es/components/message/index'
 import { uploadImage, uploadVideo } from '@/api/upload'
 import { useSiteStore } from '@/stores/site'
 
