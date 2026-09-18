@@ -1,0 +1,638 @@
+[
+  {
+    "id": "drama-mu6bwh4x",
+    "type": "drama",
+    "title": "射雕英雄传",
+    "summary": "南宋时期，惨遭灭门横祸的郭靖、杨康分别在江南七怪与全真教道士丘处机的教养下成人。18年后，郭靖奉师命南下。杨康却贪恋富贵，认贼作父。郭靖与黄蓉一见如故，彼此倾心，但因华筝之婚约在先，以及江南七怪的反对等多种因素，两人情感可谓一波三折。五位师父被害于桃花岛，郭靖愤而离开黄蓉。这一对两情相悦的青年，经历了坎坷磨难，才修成正果。恶言恶行的杨康，也难逃惨死在嘉兴铁枪庙中的命运。郭靖随黄蓉故国万里行，遍识天下武林高人，武功日见提升，终于得以报杀父深仇，消师门积怨，夺《武穆遗书》，率大军西征，承亡母之教，上华山论剑，救襄阳国难。这位原本纯朴憨厚、木讷愚钝的射雕英雄，变成一个为国为民、悲天悯人的侠之大者。",
+    "cover": "http://localhost:3000/uploads/mu6bvuv6vcwkl6.jpg",
+    "tags": [
+      "影视/电视剧"
+    ],
+    "createdAt": "2026-09-18T02:17:48.225Z",
+    "updatedAt": "2026-09-18T02:17:48.225Z",
+    "ext": {
+      "media": {
+        "year": 2017,
+        "episodes": 52
+      }
+    }
+  },
+  {
+    "id": "movie-mu6btp4r",
+    "type": "movie",
+    "title": "疯狂动物城1",
+    "summary": "故事发生在一个所有哺乳类动物和谐共存的美好世界中，兔子朱迪（金妮弗·古德温 Ginnifer Goodwin 配音）从小就梦想着能够成为一名惩恶扬善的刑警，凭借着智慧和努力，朱迪成功的从警校中毕业进入了疯狂动物城警察局，殊不知这里是大型肉食类动物的领地，作为第一只，也是唯一的小型食草类动物，朱迪会遇到怎样的故事呢？　　近日里，城中接连发生动物失踪案件，就在全部警员都致力于调查案件真相之时，朱迪却被局长（伊德瑞斯·艾尔巴 Idris Elba 配音）发配成为了一名无足轻重的交警。某日，正在执勤的兔子遇见了名为尼克（杰森·贝特曼 Jason Bateman 配音）的狐狸，两人不打不相识，之后又误打误撞的接受了寻找失踪的水獭先生的任务，如果不能在两天之内找到水獭先生，朱迪就必须自愿离开警局。朱迪找到了尼克，两人联手揭露了一个隐藏在疯狂动物城之中的惊天秘密。",
+    "cover": "http://localhost:3000/uploads/mu6bt012bzojo2.jpg",
+    "tags": [
+      "影视/电影",
+      "动漫/美漫"
+    ],
+    "createdAt": "2026-09-18T02:15:38.619Z",
+    "updatedAt": "2026-09-18T02:15:38.619Z",
+    "ext": {
+      "media": {
+        "year": 2016,
+        "episodes": 1
+      }
+    }
+  },
+  {
+    "id": "movie-mu6bpn0s",
+    "type": "movie",
+    "title": "千与千寻",
+    "summary": "千寻和爸爸妈妈一同驱车前往新家，在郊外的小路上不慎进入了神秘的隧道——他们去到了另外一个诡异世界—一个中世纪的小镇。远处飘来食物的香味，爸爸妈妈大快朵颐，孰料之后变成了猪！这时小镇上渐渐来了许多样子古怪、半透明的人。　　千寻仓皇逃出，一个叫小白的人救了他，喂了她阻止身体消 失的药，并且告诉她怎样去找锅炉爷爷以及汤婆婆，而且必须获得一份工作才能不被魔法变成别的东西。　　千寻在小白的帮助下幸运地获得了一份在浴池打杂的工作。渐渐她不再被那些怪模怪样的人吓倒，并从小玲那儿知道了小白是凶恶的汤婆婆的弟子。　　一次，千寻发现小白被一群白色飞舞的纸人打伤，为了救受伤的小白，她用河神送给她的药丸驱出了小白身体内的封印以及守封印的小妖精，但小白还是没有醒过来。　　为了救小白，千寻又踏上了她的冒险之旅。",
+    "cover": "http://localhost:3000/uploads/mu6boqjzn7kze8.jpg",
+    "tags": [
+      "影视/电影",
+      "动漫/日漫"
+    ],
+    "createdAt": "2026-09-18T02:12:29.260Z",
+    "updatedAt": "2026-09-18T02:12:29.260Z",
+    "ext": {
+      "media": {
+        "year": 2001,
+        "episodes": 1
+      }
+    }
+  },
+  {
+    "id": "essay-mu59lhqq",
+    "type": "essay",
+    "title": "测试说说",
+    "summary": "测试……",
+    "cover": "http://localhost:3000/uploads/mu59lfhru96jj0.jpg",
+    "tags": [
+      "随笔/思考"
+    ],
+    "createdAt": "2026-09-17T08:25:30.386Z",
+    "updatedAt": "2026-09-17T08:25:30.386Z",
+    "ext": {
+      "article": {
+        "content": "测试……",
+        "images": [
+          "http://localhost:3000/uploads/mu59lfhru96jj0.jpg"
+        ],
+        "wordCount": 4
+      }
+    }
+  },
+  {
+    "id": "code-mu59hox7",
+    "type": "code",
+    "title": "测试",
+    "summary": "这是一个测试",
+    "cover": "",
+    "tags": [
+      "技术/工具"
+    ],
+    "createdAt": "2026-09-17T08:22:33.067Z",
+    "updatedAt": "2026-09-17T08:22:33.067Z",
+    "ext": {
+      "article": {
+        "content": "测试…… 测试…………",
+        "wordCount": 11
+      }
+    }
+  },
+  {
+    "id": "essay-mu59f5r3",
+    "type": "essay",
+    "title": "日语学习笔记",
+    "summary": "日语学习笔记",
+    "cover": "",
+    "tags": [
+      "随笔/学习"
+    ],
+    "createdAt": "2026-09-17T08:20:34.911Z",
+    "updatedAt": "2026-09-17T08:20:34.911Z",
+    "ext": {
+      "article": {
+        "content": "# 日语学习笔记\r\n\r\n\r\n\r\n# 一、动词\r\n\r\n\r\n\r\n## 1.一类动词（五段动词）\r\n\r\n- 结尾是う段非る的动词，一定是一类动词\r\n- あ段＋る、う段＋る、お段＋る\r\n- 特例\r\n  - 書く\tかく\r\n     勝つ\tかつ\r\n     遊ぶ\tあそぶ\r\n     読む\tよむ\r\n\r\n\r\n\r\n\r\n**变形：**\r\n\r\n1. ます形（礼貌现在）\r\n\r\n   日常礼貌对话专用，表**现在、经常性动作**\r\n\r\n   う段　—　い段　＋　ます　`う`段变成`い`段结尾加上`ます`\r\n\r\n   書く\tかく　—　書きます\r\n\r\n   吸う\tすう　—　吸います\r\n\r\n\r\n\r\n\r\n\r\n\r\n## 2.二类动词（上一段动词、下一段动词）\r\n\r\n- い段＋る\r\n- え段＋る\r\n\r\n\r\n\r\n\r\n**变形：**\r\n\r\n1. ます形（礼貌现在）\r\n\r\n   日常礼貌对话专用，表**现在、经常性动作**\r\n\r\n   る　—　ます　`る`直接替换成`ます`\r\n\r\n   教える　おしえる　—　教えます\r\n\r\n   開ける　あける　—　開けます\r\n\r\n\r\n\r\n\r\n## 3.三类动词（カ変、サ変）\r\n\r\n- くる\r\n- する\r\n\r\n\r\n\r\n\r\n**变形：**\r\n\r\n1. ます形（礼貌现在）\r\n\r\n   日常礼貌对话专用，表**现在、经常性动作**\r\n\r\n   くる　—　きます　直接将`くる`替换成`きます`\r\n\r\n   する　—　します　直接将`する`替换成`します`\r\n\r\n   来る　くる　—　きます\r\n\r\n   勉強する　べんきょうする　—　勉強します\r\n\r\n   ​\r\n\r\n   ​\r\n\r\n\r\n\r\n\r\n\r\n\r\n## 4.动词的て形和た形\r\n\r\n#### 1.三类动词\r\n\r\nする　$\\rightarrow$　して\t\t\tした\r\n\r\nくる　$\\rightarrow$　きて\t\t\tきた\r\n\r\n\r\n\r\n### 2.二类动词\r\n\r\nる变成て\r\n\r\n食べる　$\\rightarrow$　食べて\t\t食べた\r\n\r\n調べる　$\\rightarrow$　調べて\t\t調べた\r\n\r\n\r\n\r\n#### 3.一类动词\r\n\r\nす　$\\rightarrow$　して\t\t\t話す　$\\rightarrow$　話して　\r\n\r\nく　$\\rightarrow$　いて\t\t\t磨く　$\\rightarrow$　磨いて　\r\n\r\nぐ　$\\rightarrow$　いで\t\t\t急ぐ　$\\rightarrow$　急いで\r\n\r\nう、つ、る　$\\rightarrow$　って\t\t洗う　$\\rightarrow$　洗って\r\n\r\n​\t\t\t\t\t\t待つ　$\\rightarrow$　待って\r\n\r\n​\t\t\t\t\t\tやる　$\\rightarrow$　やって\r\n\r\nぶ、む、ぬ　$\\rightarrow$　んで\t\t遊ぶ　$\\rightarrow$　遊んで　遊んだ\r\n\r\n​\t\t\t\t\t\t読む　$\\rightarrow$　読んで\r\n\r\n​\t\t\t\t\t\t死ぬ　$\\rightarrow$　死んで\r\n\r\n行く　$\\rightarrow$　**特例：** 行って　行った\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n### 自动词 & 他动词\r\n\r\n核心一句话：\r\n**他动词：人对别的东西做动作，要有宾语，用助词を。**\r\n**自动词：东西自己发生变化，不需要宾语，用助词が。**\r\n\r\n\r\n\r\n# 二、形容词\r\n\r\n\r\n\r\n## 1.一类形容词\r\n\r\n- い 结尾\r\n- 汉字 + い，　暑い、冷たい、寒い、暖かい\r\n\r\n\r\n\r\n\r\n- 肯定形式：い＋です　熱いです\r\n- 否定形式：い $\\rightarrow$ くない　熱くない\r\n- 否定形式（礼貌）：ありません　熱くなりません\r\n- 过去肯定：い $\\rightarrow$ かった　暑かったです\r\n- 过去否定：い $\\rightarrow$ くなかった　熱くなかったです\r\n- 过去否定（礼貌）：い $\\rightarrow$ くありませんでした\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n## 2.二类形容词\r\n\r\n- ​\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+        "wordCount": 1728
+      }
+    }
+  },
+  {
+    "id": "anime-mu595xka",
+    "type": "anime",
+    "title": "からかい上手の高木さん２",
+    "summary": "“今天一定要捉弄高木同学，让她害羞！”\n某所初中里，邻座女生高木同学总是捉弄男生西片。\n西片为了反过来戏弄高木同学，每天都在奋斗着……\n高木同学和西片的全力“捉弄”青春之战就此开始。",
+    "cover": "http://localhost:3000/uploads/mu593zntkh4zmk.jpg",
+    "tags": [
+      "动漫/日漫"
+    ],
+    "createdAt": "2026-09-17T08:13:24.394Z",
+    "updatedAt": "2026-09-17T08:13:24.394Z",
+    "ext": {
+      "media": {
+        "year": 2019,
+        "episodes": 12
+      }
+    }
+  },
+  {
+    "id": "anime-mu58v1zv",
+    "type": "anime",
+    "title": "约会大作战1",
+    "summary": "故事是讲述一名普通的高中二年级生五河士道，突然在某一天遇上了一场大爆炸，而在这场大爆炸之中竟然出现一名身穿盔甲手持大剑的神秘美少女。原来这名少女的真正身份是“精灵”，是会给世界带来毁灭性灾难的存在，她的再次出现，将会给地球带来毁灭性的未来！然而主人公士道却有方法阻止世界毁灭，这个唯一能够阻止世界毁灭的方法就是——要与她约会！",
+    "cover": "http://localhost:3000/uploads/mu58qpzn14wzn6.webp",
+    "tags": [
+      "动漫/日漫"
+    ],
+    "createdAt": "2026-09-17T08:04:56.923Z",
+    "updatedAt": "2026-09-17T08:04:56.923Z",
+    "ext": {
+      "media": {
+        "year": 2013,
+        "episodes": 13
+      }
+    }
+  },
+  {
+    "id": "e1",
+    "type": "essay",
+    "title": "深夜便利店与我的胡思乱想",
+    "summary": "凌晨两点的便利店像一个微缩的世界线，货架上的光把夜晚照得过分安静。",
+    "cover": "",
+    "tags": [
+      "随笔",
+      "夜晚",
+      "生活"
+    ],
+    "createdAt": "2026-09-13T23:40:00.000Z",
+    "updatedAt": "2026-09-13T23:40:00.000Z",
+    "ext": {
+      "article": {
+        "wordCount": 620,
+        "content": "# 深夜便利店与我的胡思乱想\n\n凌晨两点，我走进那家 24 小时营业的便利店。自动门「叮咚」一声，像一个被按下开关的旧收音机。\n\n货架上的光白得过分，把每一瓶饮料都照得像是刚从冰箱里取出来的梦。我拿起一瓶牛奶，突然想起很多年前，也曾在同样的时刻，站在同样的位置。\n\n> 时间不是一条直线，它更像一个回环，我们只是不停地经过同一家便利店。\n\n收银台后的店员低着头，不知道在看什么。我猜他也有自己的世界线，只是此刻和我的短暂地重叠了一下。\n\n结账，出门。夜晚把声音都吸走了，只剩下塑料袋的沙沙声。"
+      }
+    }
+  },
+  {
+    "id": "e2",
+    "type": "essay",
+    "title": "雨天、耳机与旧漫画",
+    "summary": "下雨天最适合做的事，是把一首老歌循环一整天，再翻出那本卷了边的漫画。",
+    "cover": "",
+    "tags": [
+      "随笔",
+      "雨天",
+      "音乐"
+    ],
+    "createdAt": "2026-09-05T16:15:00.000Z",
+    "updatedAt": "2026-09-05T16:15:00.000Z",
+    "ext": {
+      "article": {
+        "wordCount": 480,
+        "content": "# 雨天、耳机与旧漫画\n\n雨从下午开始下，不大，但很密。我戴上耳机，随机播放到一首很旧的歌。\n\n音符落进雨声里，竟然分不清哪是雨，哪是歌。这大概就是「氛围」：你不需要刻意寻找意义，它自己就来了。\n\n书架最底层有一本卷了边的漫画，封面已经发黄。翻开来，纸页的味道混着潮湿的空气，像打开了某个夏天的存档。\n\n有些东西不会过时，只是需要一个合适的天气，把它重新打开。"
+      }
+    }
+  },
+  {
+    "id": "e3",
+    "type": "essay",
+    "title": "关于「存档」这件事",
+    "summary": "为什么要把看过、听过的都记下来？大概是因为，记忆本身并不可靠。",
+    "cover": "",
+    "tags": [
+      "随笔",
+      "思考"
+    ],
+    "createdAt": "2026-08-22T20:00:00.000Z",
+    "updatedAt": "2026-08-22T20:00:00.000Z",
+    "ext": {
+      "article": {
+        "wordCount": 540,
+        "content": "# 关于「存档」这件事\n\n人的记忆是一种很不稳定的介质：它会模糊、会美化，也会在你毫无防备的时候悄悄篡改细节。\n\n所以我想做一个「存档点」：把喜欢的音乐、动画、电影、漫画，还有那些一闪而过的念头，都固定下来。\n\n- 每一首歌，都是一个时间坐标\n- 每一部动画，都是一段情绪\n- 每一篇随笔，都是一次对过去的致敬\n\n存档不是为了活在过去，而是为了在未来的某一天，能顺着这些坐标，回到当时的那条世界线。"
+      }
+    }
+  },
+  {
+    "id": "e4",
+    "type": "essay",
+    "title": "海边的周末",
+    "summary": "周六去了海边，风很大，浪很白，坐在防波堤上发了很久的呆。",
+    "cover": "https://picsum.photos/seed/worldline-e4a/1200/900",
+    "tags": [
+      "生活",
+      "旅行",
+      "海"
+    ],
+    "createdAt": "2026-09-09T17:20:00.000Z",
+    "updatedAt": "2026-09-09T17:20:00.000Z",
+    "ext": {
+      "article": {
+        "wordCount": 380,
+        "images": [
+          "https://picsum.photos/seed/worldline-e4a/1200/900",
+          "https://picsum.photos/seed/worldline-e4b/1200/900",
+          "https://picsum.photos/seed/worldline-e4c/1200/900"
+        ],
+        "content": "# 海边的周末\n\n周六去了海边。风很大，浪很白，坐在防波堤上发了很久的呆。\n\n海的声音有一种奇怪的魔力：它足够吵，却又能把脑子里那些杂音全部盖掉。\n\n回程的公交上睡了一路，醒来的时候天已经黑了。"
+      }
+    }
+  },
+  {
+    "id": "e5",
+    "type": "essay",
+    "title": "新相机试拍",
+    "summary": "终于把攒了很久的相机买回来了，随手拍了几张，才发现光比想象中难调。",
+    "cover": "https://picsum.photos/seed/worldline-e5a/1200/900",
+    "tags": [
+      "摄影",
+      "生活"
+    ],
+    "createdAt": "2026-08-30T19:40:00.000Z",
+    "updatedAt": "2026-08-30T19:40:00.000Z",
+    "ext": {
+      "article": {
+        "wordCount": 320,
+        "images": [
+          "https://picsum.photos/seed/worldline-e5a/1200/900",
+          "https://picsum.photos/seed/worldline-e5b/1200/900"
+        ],
+        "content": "# 新相机试拍\n\n终于把攒了很久的相机买回来了。\n\n随手拍了几张，才发现「光比」这件事比想象中难调——眼睛看到的层次，和相机记录下来的，总差着一点。\n\n看来还得多拍。"
+      }
+    }
+  },
+  {
+    "id": "e6",
+    "type": "essay",
+    "title": "雨天的窗",
+    "summary": "下了一整天的雨，窗户上全是水痕，把外面的世界糊成了一幅水彩。",
+    "cover": "https://picsum.photos/seed/worldline-e6a/1200/900",
+    "tags": [
+      "雨天",
+      "生活"
+    ],
+    "createdAt": "2026-08-18T15:10:00.000Z",
+    "updatedAt": "2026-08-18T15:10:00.000Z",
+    "ext": {
+      "article": {
+        "wordCount": 300,
+        "images": [
+          "https://picsum.photos/seed/worldline-e6a/1200/900"
+        ],
+        "content": "# 雨天的窗\n\n下了一整天的雨。\n\n窗户上全是水痕，把外面的世界糊成了一幅水彩：楼房是灰的，树是墨的，路灯是暖黄的一团。\n\n这种天气最适合什么都不做。"
+      }
+    }
+  },
+  {
+    "id": "c1",
+    "type": "code",
+    "title": "Vue3 组合式 API 心智模型笔记",
+    "summary": "组合式 API 的核心不是语法糖，而是把同一逻辑相关的状态与副作用聚合到一起。",
+    "cover": "",
+    "tags": [
+      "Vue",
+      "前端",
+      "笔记"
+    ],
+    "createdAt": "2026-09-08T10:30:00.000Z",
+    "updatedAt": "2026-09-08T10:30:00.000Z",
+    "ext": {
+      "article": {
+        "wordCount": 900,
+        "content": "# Vue3 组合式 API 心智模型笔记\n\n组合式 API 的核心不是语法糖，而是**把同一逻辑相关的状态与副作用聚合到一起**，让「这个组件在做什么」变得可读。\n\n## 三个关键点\n\n1. `ref` 用于基本类型，`reactive` 用于对象，但底层都是同一套响应式原理（Proxy + 依赖收集）。\n2. 生命周期钩子可以在 `setup` 中多次声明，按声明顺序执行。\n3. `computed` 是惰性、带缓存的派生状态；`watch` 用于「状态变化后做点事」。\n\n## 一个最小示例\n\n```js\nimport { ref, computed } from 'vue'\n\nconst count = ref(0)\nconst doubled = computed(() => count.value * 2)\n```\n\n把上面的模式迁移到自定义 `useXxx` 函数里，就是组合式 API 最大的价值：**逻辑复用**。"
+      }
+    }
+  },
+  {
+    "id": "c2",
+    "type": "code",
+    "title": "从零搭建一个 JSON 文件数据库",
+    "summary": "用最少的代码实现读写、筛选、分页与排序，为后续平滑迁移到真实数据库留好接口。",
+    "cover": "",
+    "tags": [
+      "Node.js",
+      "后端",
+      "数据存储"
+    ],
+    "createdAt": "2026-08-30T14:00:00.000Z",
+    "updatedAt": "2026-08-30T14:00:00.000Z",
+    "ext": {
+      "article": {
+        "wordCount": 820,
+        "content": "# 从零搭建一个 JSON 文件数据库\n\n小项目不想引入数据库？一个 `storage` 模块就够了。关键是把文件读写封装在**一个地方**，路由层只调用 `load()` / `save()`。\n\n```js\nimport fs from 'node:fs'\n\nfunction readJson(filename, fallback = []) {\n  try {\n    return JSON.parse(fs.readFileSync(filename, 'utf-8'))\n  } catch {\n    return fallback\n  }\n}\n```\n\n这样做的最大好处是：将来迁移到 SQLite / MySQL / PostgreSQL 时，只需要替换 `storage` 内部实现，业务路由一行都不用改。"
+      }
+    }
+  },
+  {
+    "id": "c3",
+    "type": "code",
+    "title": "CSS 毛玻璃 backdrop-filter 实践",
+    "summary": "毛玻璃质感的实现要点、性能陷阱，以及与主题变量结合的优雅做法。",
+    "cover": "",
+    "tags": [
+      "CSS",
+      "前端",
+      "视觉"
+    ],
+    "createdAt": "2026-08-18T11:20:00.000Z",
+    "updatedAt": "2026-08-18T11:20:00.000Z",
+    "ext": {
+      "article": {
+        "wordCount": 700,
+        "content": "# CSS 毛玻璃 backdrop-filter 实践\n\n毛玻璃（Glassmorphism）的核心属性只有一行：\n\n```css\n.glass {\n  background: rgba(255,255,255,0.72);\n  backdrop-filter: blur(20px) saturate(1.2);\n}\n```\n\n需要注意：\n\n- 背景必须是半透明，否则模糊效果看不见\n- `backdrop-filter` 在部分老浏览器需要 `-webkit-` 前缀\n- 大量模糊层会带来 GPU 开销，不要滥用\n\n配合主题变量（`--surface-glass` / `--blur`），深浅两套主题可以共用同一份样式。"
+      }
+    }
+  },
+  {
+    "id": "d1",
+    "type": "drama",
+    "title": "重启人生",
+    "summary": "普通职员近藤麻美意外离世后获得重来的机会，为了「下辈子转生为人」而一次次积攒功德。",
+    "cover": "https://picsum.photos/seed/worldline-d1/600/900",
+    "tags": [
+      "日剧",
+      "治愈",
+      "奇幻"
+    ],
+    "createdAt": "2026-08-12T23:00:00.000Z",
+    "updatedAt": "2026-08-12T23:00:00.000Z",
+    "ext": {
+      "media": {
+        "rating": 9.3,
+        "year": 2023,
+        "status": "已看完",
+        "episodes": 10
+      }
+    }
+  },
+  {
+    "id": "mg1",
+    "type": "manga",
+    "title": "葬送的芙莉莲（漫画）",
+    "summary": "动画之外的原作漫画，分镜与留白让「时间感」更加绵长。",
+    "cover": "https://picsum.photos/seed/worldline-mg1/600/900",
+    "tags": [
+      "奇幻",
+      "治愈",
+      "漫画"
+    ],
+    "createdAt": "2026-08-20T18:00:00.000Z",
+    "updatedAt": "2026-08-20T18:00:00.000Z",
+    "ext": {
+      "media": {
+        "rating": 9.5,
+        "year": 2020,
+        "status": "在看",
+        "episodes": 140
+      }
+    }
+  },
+  {
+    "id": "w1",
+    "type": "wallpaper",
+    "title": "国漫壁纸",
+    "summary": "国产动画相关壁纸合集，以电脑横屏壁纸为主。",
+    "cover": "",
+    "tags": [
+      "国漫"
+    ],
+    "createdAt": "2026-08-06T20:00:00.000Z",
+    "updatedAt": "2026-08-06T20:00:00.000Z",
+    "ext": {
+      "wallpaper": {
+        "images": [
+          {
+            "url": "https://picsum.photos/seed/worldline-w1a/1920/1080",
+            "width": 1920,
+            "height": 1080,
+            "title": "国漫 · 电脑壁纸 一"
+          },
+          {
+            "url": "https://picsum.photos/seed/worldline-w1b/1920/1200",
+            "width": 1920,
+            "height": 1200,
+            "title": "国漫 · 电脑壁纸 二"
+          },
+          {
+            "url": "https://picsum.photos/seed/worldline-w1c/1600/900",
+            "width": 1600,
+            "height": 900,
+            "title": "国漫 · 电脑壁纸 三"
+          },
+          {
+            "url": "https://picsum.photos/seed/worldline-w1d/800/1400",
+            "width": 800,
+            "height": 1400,
+            "title": "国漫 · 手机壁纸"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "w2",
+    "type": "wallpaper",
+    "title": "日漫壁纸",
+    "summary": "日系动画相关壁纸合集，以电脑横屏壁纸为主。",
+    "cover": "",
+    "tags": [
+      "日漫"
+    ],
+    "createdAt": "2026-07-28T20:00:00.000Z",
+    "updatedAt": "2026-07-28T20:00:00.000Z",
+    "ext": {
+      "wallpaper": {
+        "images": [
+          {
+            "url": "https://picsum.photos/seed/worldline-w2a/1920/1080",
+            "width": 1920,
+            "height": 1080,
+            "title": "日漫 · 电脑壁纸 一"
+          },
+          {
+            "url": "https://picsum.photos/seed/worldline-w2b/1920/1200",
+            "width": 1920,
+            "height": 1200,
+            "title": "日漫 · 电脑壁纸 二"
+          },
+          {
+            "url": "https://picsum.photos/seed/worldline-w2c/1600/900",
+            "width": 1600,
+            "height": 900,
+            "title": "日漫 · 电脑壁纸 三"
+          },
+          {
+            "url": "https://picsum.photos/seed/worldline-w2d/800/1400",
+            "width": 800,
+            "height": 1400,
+            "title": "日漫 · 手机壁纸"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "w3",
+    "type": "wallpaper",
+    "title": "港风壁纸",
+    "summary": "港风复古氛围壁纸合集，以电脑横屏壁纸为主。",
+    "cover": "",
+    "tags": [
+      "港风"
+    ],
+    "createdAt": "2026-07-15T20:00:00.000Z",
+    "updatedAt": "2026-07-15T20:00:00.000Z",
+    "ext": {
+      "wallpaper": {
+        "images": [
+          {
+            "url": "https://picsum.photos/seed/worldline-w3a/1920/1080",
+            "width": 1920,
+            "height": 1080,
+            "title": "港风 · 电脑壁纸 一"
+          },
+          {
+            "url": "https://picsum.photos/seed/worldline-w3b/1920/1200",
+            "width": 1920,
+            "height": 1200,
+            "title": "港风 · 电脑壁纸 二"
+          },
+          {
+            "url": "https://picsum.photos/seed/worldline-w3c/1600/900",
+            "width": 1600,
+            "height": 900,
+            "title": "港风 · 电脑壁纸 三"
+          },
+          {
+            "url": "https://picsum.photos/seed/worldline-w3d/800/1400",
+            "width": 800,
+            "height": 1400,
+            "title": "港风 · 手机壁纸"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "w4",
+    "type": "wallpaper",
+    "title": "电脑壁纸",
+    "summary": "横屏电脑壁纸合集，适合桌面与笔记本。",
+    "cover": "",
+    "tags": [
+      "电脑"
+    ],
+    "createdAt": "2026-07-02T20:00:00.000Z",
+    "updatedAt": "2026-07-02T20:00:00.000Z",
+    "ext": {
+      "wallpaper": {
+        "images": [
+          {
+            "url": "https://picsum.photos/seed/worldline-w4a/1920/1080",
+            "width": 1920,
+            "height": 1080,
+            "title": "电脑壁纸 · 一"
+          },
+          {
+            "url": "https://picsum.photos/seed/worldline-w4b/2560/1440",
+            "width": 2560,
+            "height": 1440,
+            "title": "电脑壁纸 · 二"
+          },
+          {
+            "url": "https://picsum.photos/seed/worldline-w4c/1920/1200",
+            "width": 1920,
+            "height": 1200,
+            "title": "电脑壁纸 · 三"
+          },
+          {
+            "url": "https://picsum.photos/seed/worldline-w4d/1600/900",
+            "width": 1600,
+            "height": 900,
+            "title": "电脑壁纸 · 四"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "pj1",
+    "type": "project",
+    "title": "世界线存档",
+    "summary": "本站——一个收藏 BGM、动漫、电影、漫画、壁纸与随笔的个人博客，前后端分离架构。",
+    "cover": "",
+    "tags": [
+      "技术/前端",
+      "技术/后端"
+    ],
+    "createdAt": "2026-06-01T10:00:00.000Z",
+    "updatedAt": "2026-06-01T10:00:00.000Z",
+    "ext": {
+      "project": {
+        "url": "https://github.com/yourname/worldline-archive"
+      }
+    }
+  },
+  {
+    "id": "pj2",
+    "type": "project",
+    "title": "示例项目 A",
+    "summary": "一个用于演示项目卡片布局的示例项目，描述占位，之后替换为真实项目。",
+    "cover": "",
+    "tags": [
+      "技术/前端"
+    ],
+    "createdAt": "2026-05-18T10:00:00.000Z",
+    "updatedAt": "2026-05-18T10:00:00.000Z",
+    "ext": {
+      "project": {
+        "url": "https://github.com/yourname/example-a"
+      }
+    }
+  },
+  {
+    "id": "pj3",
+    "type": "project",
+    "title": "示例项目 B",
+    "summary": "另一个示例项目，展示技术标签的展示方式。",
+    "cover": "",
+    "tags": [
+      "技术/后端"
+    ],
+    "createdAt": "2026-05-06T10:00:00.000Z",
+    "updatedAt": "2026-05-06T10:00:00.000Z",
+    "ext": {
+      "project": {
+        "url": "https://github.com/yourname/example-b"
+      }
+    }
+  },
+  {
+    "id": "tl1",
+    "type": "tool",
+    "title": "JSON 格式化",
+    "summary": "在线 JSON 格式化 / 校验工具，粘贴即用。",
+    "cover": "",
+    "tags": [
+      "技术/工具"
+    ],
+    "createdAt": "2026-04-20T10:00:00.000Z",
+    "updatedAt": "2026-04-20T10:00:00.000Z",
+    "ext": {
+      "tool": {
+        "url": "https://www.json.cn"
+      }
+    }
+  },
+  {
+    "id": "tl2",
+    "type": "tool",
+    "title": "时间戳转换",
+    "summary": "Unix 时间戳与日期互转，调试常用。",
+    "cover": "",
+    "tags": [
+      "技术/工具"
+    ],
+    "createdAt": "2026-04-12T10:00:00.000Z",
+    "updatedAt": "2026-04-12T10:00:00.000Z",
+    "ext": {
+      "tool": {
+        "url": "https://tool.lu/timestamp"
+      }
+    }
+  }
+]

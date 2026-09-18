@@ -1,0 +1,26 @@
+# ═══ 环境变量文件 ═══
+# server/.env 里放后台账号密码与 token 签名密钥，一旦提交就等于把后台交出去，必须忽略。
+# 模板文件 server/.env.example 需要提交，供别人照着填。
+server/.env
+# 各处的本地覆盖配置（通常含密钥、个人地址等，不要提交）
+.env.local
+.env.*.local
+*.local
+!.env.example
+
+# 说明：web/.env 是站点的非密配置（VITE_USE_MOCK / VITE_API_BASE），
+# 新克隆的人需要它才能正确连后端，所以这里不忽略，保持提交。
+
+# ═══ SQLite 本地数据库 ═══
+# 属于运行时数据，不要提交；*.db-* 覆盖 SQLite 产生的 -wal / -shm / -journal 附属文件。
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+
+# ═══ 依赖与构建产物 ═══
+node_modules/
+dist/
+*.log
+.DS_Store
+Thumbs.db

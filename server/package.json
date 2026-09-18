@@ -1,0 +1,18 @@
+{
+  "name": "worldline-archive-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch-path=./app.js --watch-path=./routes --watch-path=./utils --watch-path=./middleware --watch-path=./db app.js",
+    "start": "node app.js",
+    "db:init": "node scripts/init-db.js",
+    "db:migrate": "node scripts/migrate-json-to-sqlite.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "multer": "^2.0.1",
+    "node-sqlite3-wasm": "^0.8.60"
+  }
+}
